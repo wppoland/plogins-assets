@@ -1,0 +1,15 @@
+includes:
+    - vendor/szepeviktor/phpstan-wordpress/extension.neon
+
+parameters:
+    level: 6
+    paths:
+        - plogins-assets.php
+        - src
+        - config
+    excludePaths:
+        - vendor/
+    bootstrapFiles:
+        - tests/phpstan/constants.php
+    treatPhpDocTypesAsCertain: false
+    reportUnmatchedIgnoredErrors: false

@@ -1,0 +1,29 @@
+# Files excluded from the wp.org build. The plugin boots via the PSR-4 fallback
+# in autoload.php, so Composer (/vendor + composer files) is not shipped.
+/.git
+/.github
+/.gitignore
+/.distignore
+/.wp-env.json
+/node_modules
+/tests
+/vendor
+/composer.json
+/composer.lock
+/phpstan.neon
+/phpstan.neon.dist
+/phpcs.xml
+/phpcs.xml.dist
+/SUBMISSION.md
+/.wordpress-org
+/scripts
+/docs
+/README.md
+.DS_Store
+
+# editor backups (never ship / never a badly_named_files reject)
+*~
+*.bak
+
+# Translation import tooling (GlotPress PO/MO staging) - never ship in the zip
+glotpress-import/

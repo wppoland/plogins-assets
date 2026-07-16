@@ -1,0 +1,10 @@
+/vendor/
+/node_modules/
+composer.lock
+package-lock.json
+.DS_Store
+*.log
+/build/
+/dist/
+*~
+*.bak

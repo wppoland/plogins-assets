@@ -1,0 +1,33 @@
+.plogins-assets .plogins-assets-rules {
+	max-width: 980px;
+	margin-top: 1em;
+}
+
+.plogins-assets .plogins-assets-rules th {
+	font-weight: 600;
+}
+
+.plogins-assets .plogins-assets-rules td {
+	vertical-align: middle;
+}
+
+.plogins-assets .plogins-assets-rules input.regular-text,
+.plogins-assets .plogins-assets-rules select {
+	width: 100%;
+}
+
+.plogins-assets .plogins-assets-remove {
+	color: #b32d2e;
+	font-size: 20px;
+	line-height: 1;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.plogins-assets .plogins-assets-remove:hover {
+	color: #d63638;
+}
+
+.plogins-assets .notice.inline {
+	margin: 1em 0;
+}
