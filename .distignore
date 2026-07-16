@@ -5,6 +5,8 @@
 /.gitignore
 /.distignore
 /.wp-env.json
+/.shotkit
+/.raw
 /node_modules
 /tests
 /vendor

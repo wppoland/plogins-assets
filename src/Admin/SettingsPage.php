@@ -31,18 +31,20 @@ final class SettingsPage implements HasHooks
 
     public function addMenu(): void
     {
-        add_options_page(
+        add_menu_page(
             __('Plogins Assets', 'plogins-assets'),
             __('Plogins Assets', 'plogins-assets'),
             'manage_options',
             self::SLUG,
-            [$this, 'render']
+            [$this, 'render'],
+            'dashicons-performance',
+            81
         );
     }
 
     public function assets(string $hook): void
     {
-        if ('settings_page_' . self::SLUG !== $hook) {
+        if ('toplevel_page_' . self::SLUG !== $hook) {
             return;
         }
 
@@ -81,7 +83,7 @@ final class SettingsPage implements HasHooks
 
         wp_safe_redirect(add_query_arg(
             ['page' => self::SLUG, 'updated' => '1'],
-            admin_url('options-general.php')
+            admin_url('admin.php')
         ));
         exit;
     }
