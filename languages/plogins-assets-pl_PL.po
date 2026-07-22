@@ -1,0 +1,154 @@
+# Copyright (C) 2026 WPPoland.com
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Plogins Assets - Conditional Script & Style Loading 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-assets\n"
+"POT-Creation-Date: 2026-07-16T08:26:31+00:00\n"
+"PO-Revision-Date: 2026-07-16T08:26:31+00:00\n"
+"Last-Translator: wppoland.com <hello@wppoland.com>\n"
+"Language-Team: Polish <pl@li.org>\n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Domain: plogins-assets\n"
+"X-Generator: WP-CLI 2.12.0\n"
+
+#. Plugin Name of the plugin
+#: plogins-assets.php
+msgid "Plogins Assets - Conditional Script & Style Loading"
+msgstr "Zasoby Plogins — warunkowe ładowanie skryptu i stylu"
+
+#. Plugin URI of the plugin
+#: plogins-assets.php
+msgid "https://plogins.com/plogins-assets/"
+msgstr "https://plogins.com/pl/plogins-assets/"
+
+#. Description of the plugin
+#: plogins-assets.php
+msgid ""
+"Dequeue individual scripts and styles on the pages that do not need them. "
+"Fewer requests, lighter pages, faster loads - using WordPress core, no page "
+"builder lock-in."
+msgstr ""
+"Usuń z kolejki poszczególne skrypty i style na stronach, które ich nie "
+"potrzebują. Mniej żądań, lżejsze strony, szybsze ładowanie - przy użyciu "
+"rdzenia WordPress, bez blokady narzędzia do tworzenia stron."
+
+#. Author of the plugin
+#: plogins-assets.php
+msgid "WPPoland.com"
+msgstr "WPPoland.com"
+
+#. Author URI of the plugin
+#: plogins-assets.php
+msgid "https://wppoland.com"
+msgstr "https://wppoland.com"
+
+#: src/Admin/SettingsPage.php:35 src/Admin/SettingsPage.php:36
+#: src/Admin/SettingsPage.php:104
+msgid "Plogins Assets"
+msgstr "Zasoby Ploginów"
+
+#: src/Admin/SettingsPage.php:67
+msgid "You are not allowed to do this."
+msgstr "Nie wolno Ci tego robić."
+
+#: src/Admin/SettingsPage.php:106
+msgid ""
+"Remove specific scripts and styles from the pages that do not need them. "
+"Lighter pages load faster."
+msgstr ""
+"Usuń określone skrypty i style ze stron, które ich nie potrzebują. Lżejsze "
+"strony ładują się szybciej."
+
+#: src/Admin/SettingsPage.php:110
+msgid "Settings saved."
+msgstr "Ustawienia zapisane."
+
+#: src/Admin/SettingsPage.php:114
+msgid ""
+"Removing a handle that another script depends on can break page "
+"functionality. Change one rule at a time and check the front end."
+msgstr ""
+"Usunięcie uchwytu, od którego zależy inny skrypt, może spowodować "
+"uszkodzenie funkcjonalności strony. Zmieniaj jedną regułę na raz i sprawdzaj"
+" przód."
+
+#: src/Admin/SettingsPage.php:124
+msgid "Enable conditional asset loading"
+msgstr "Włącz warunkowe ładowanie zasobów"
+
+#: src/Admin/SettingsPage.php:131
+msgid "Handle"
+msgstr "Uchwyt"
+
+#: src/Admin/SettingsPage.php:132
+msgid "Type"
+msgstr "Typ"
+
+#: src/Admin/SettingsPage.php:133
+msgid "Remove when"
+msgstr "Usuń kiedy"
+
+#: src/Admin/SettingsPage.php:134
+msgid "Post/Page IDs"
+msgstr "Identyfikatory postów/stron"
+
+#: src/Admin/SettingsPage.php:147
+msgid "+ Add rule"
+msgstr "+ Dodaj regułę"
+
+#: src/Admin/SettingsPage.php:153
+msgid "Save rules"
+msgstr "Zapisz zasady"
+
+#: src/Admin/SettingsPage.php:175
+msgid "e.g. contact-form-7"
+msgstr "np. formularz kontaktowy-7"
+
+#: src/Admin/SettingsPage.php:179
+msgid "Script (JS)"
+msgstr "Skrypt (JS)"
+
+#: src/Admin/SettingsPage.php:180
+msgid "Style (CSS)"
+msgstr "Styl (CSS)"
+
+#: src/Admin/SettingsPage.php:195
+msgid "optional, e.g. 12, 34"
+msgstr "opcjonalne, np. 12, 34"
+
+#: src/Admin/SettingsPage.php:198
+msgid "Remove rule"
+msgstr "Usuń regułę"
+
+#: src/Admin/SettingsPage.php:207
+msgid "Everywhere"
+msgstr "Wszędzie"
+
+#: src/Admin/SettingsPage.php:208
+msgid "On the front page"
+msgstr "Na pierwszej stronie"
+
+#: src/Admin/SettingsPage.php:209
+msgid "On the blog posts index"
+msgstr "W indeksie wpisów na blogu"
+
+#: src/Admin/SettingsPage.php:210
+msgid "On single posts/pages (matching IDs)"
+msgstr "Na pojedynczych postach/stronach (pasujące identyfikatory)"
+
+#: src/Admin/SettingsPage.php:211
+msgid "Except single posts/pages (matching IDs)"
+msgstr "Z wyjątkiem pojedynczych postów/stron (pasujące identyfikatory)"
+
+#: src/Admin/SettingsPage.php:212
+msgid "On mobile devices"
+msgstr "Na urządzeniach mobilnych"
+
+#: src/Admin/SettingsPage.php:213
+msgid "On desktop devices"
+msgstr "Na urządzeniach stacjonarnych"
