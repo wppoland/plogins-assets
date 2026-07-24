@@ -4,7 +4,7 @@ Tags: performance, assets, scripts, styles, optimization
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 8.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,6 +62,9 @@ No. Rules apply on the front end only.
 1. The rule table: remove a handle on the pages that do not need it.
 
 == Changelog ==
+
+= 1.0.1 =
+* Version bump to meet the family release floor for the WordPress.org submission.
 
 = 1.0.0 =
 * Initial release.
