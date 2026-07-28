@@ -19,7 +19,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: plogins-assets.php
 msgid "Plogins Assets - Conditional Script & Style Loading"
-msgstr "Plogins-Assets – Bedingtes Laden von Skripten und Stilen"
+msgstr "Plogins-Assets, Bedingtes Laden von Skripten und Stilen"
 
 #. Plugin URI of the plugin
 #: plogins-assets.php
@@ -35,7 +35,7 @@ msgid ""
 msgstr ""
 "Entferne einzelne Skripte und Stile aus der Warteschlange auf den Seiten, "
 "die sie nicht benötigen. Weniger Anfragen, schlankere Seiten, schnellere "
-"Ladevorgänge – mit WordPress-Kern, keine Bindung an den Seitenersteller."
+"Ladevorgänge, mit WordPress-Kern, keine Bindung an den Seitenersteller."
 
 #. Author of the plugin
 #: plogins-assets.php

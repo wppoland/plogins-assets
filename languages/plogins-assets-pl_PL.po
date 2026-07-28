@@ -19,7 +19,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: plogins-assets.php
 msgid "Plogins Assets - Conditional Script & Style Loading"
-msgstr "Zasoby Plogins — warunkowe ładowanie skryptu i stylu"
+msgstr "Zasoby Plogins, warunkowe ładowanie skryptu i stylu"
 
 #. Plugin URI of the plugin
 #: plogins-assets.php
