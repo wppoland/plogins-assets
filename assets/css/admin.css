@@ -16,6 +16,16 @@
 	width: 100%;
 }
 
+.plogins-assets .plogins-assets-ids-note {
+	display: block;
+	margin-top: 4px;
+	font-style: italic;
+}
+
+.plogins-assets .plogins-assets-ids-note[hidden] {
+	display: none;
+}
+
 .plogins-assets .plogins-assets-remove {
 	color: #b32d2e;
 	font-size: 20px;

@@ -4,7 +4,7 @@ Tags: performance, assets, scripts, styles, optimization
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 8.1
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,10 @@ Plogins Assets is one of a family of small, focused WordPress and WooCommerce pl
 
 Open the page in your browser, view source or the Network tab, and look at the `id` attribute of the `<script>` / `<link>` tags - it usually ends in `-js` or `-css` (the handle is that value without the suffix). The settings screen also offers autocomplete from the handles currently registered on your site.
 
+= When do the Post/Page IDs apply? =
+
+Only to the two single posts/pages conditions. The other conditions (everywhere, front page, blog index, mobile, desktop) decide from the request alone, so the IDs box is greyed out for them and a rule set that way removes the handle on every page it matches.
+
 = Will this break my site? =
 
 It only removes what you configure. If a handle you remove is a dependency of another script, that other script may stop working. Change one rule at a time and verify the front end. You can remove a rule to restore the asset instantly.
@@ -62,6 +66,9 @@ No. Rules apply on the front end only.
 1. The rule table: remove a handle on the pages that do not need it.
 
 == Changelog ==
+
+= 1.0.3 =
+* The Post/Page IDs box is now available only for the two single posts/pages conditions, the ones that can act on it. With any other condition it is greyed out with a short note, so a rule set to Everywhere or to a device can no longer look as if it were limited to a few pages while the handle is in fact removed across the whole site.
 
 = 1.0.1 =
 * Version bump to meet the family release floor for the WordPress.org submission.

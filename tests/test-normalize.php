@@ -36,7 +36,7 @@ $repo = new SettingsRepository();
 $out = $repo->normalizeRules([
     ['handle' => '  contact-form-7  ', 'type' => 'script', 'condition' => 'not_singular', 'ids' => ''],
     ['handle' => '', 'type' => 'style', 'condition' => 'everywhere'],
-    ['handle' => "<b>slider</b>", 'type' => 'style', 'condition' => 'front_page', 'ids' => '12, 34, 34, -5, abc'],
+    ['handle' => "<b>slider</b>", 'type' => 'style', 'condition' => 'is_singular', 'ids' => '12, 34, 34, -5, abc'],
 ]);
 assert(count($out) === 2, 'empty-handle row must be dropped');
 assert($out[0]['handle'] === 'contact-form-7', 'handle must be trimmed');
@@ -52,7 +52,18 @@ assert($out2[0]['condition'] === 'everywhere', 'bad condition -> everywhere');
 assert($out[1]['handle'] === 'slider', 'tags stripped from handle');
 assert($out[1]['ids'] === [12, 34], 'ids parsed/deduped/positive-only, got ' . implode(',', $out[1]['ids']));
 
-// 4. Non-array input is safe.
+// 4. IDs are dropped for the conditions that never read them, so nothing comes
+// back to the admin screen looking like it narrows the rule.
+$out3 = $repo->normalizeRules([
+    ['handle' => 'a', 'condition' => 'everywhere', 'ids' => '12, 34'],
+    ['handle' => 'b', 'condition' => 'mobile', 'ids' => '12'],
+    ['handle' => 'c', 'condition' => 'not_singular', 'ids' => '12'],
+]);
+assert($out3[0]['ids'] === [], 'everywhere must not keep ids');
+assert($out3[1]['ids'] === [], 'mobile must not keep ids');
+assert($out3[2]['ids'] === [12], 'not_singular must keep ids');
+
+// 5. Non-array input is safe.
 assert($repo->normalizeRules('garbage') === []);
 assert($repo->normalizeRules(['not-a-row', 42]) === []);
 

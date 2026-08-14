@@ -191,10 +191,22 @@ final class SettingsPage implements HasHooks
                     <?php endforeach; ?>
                 </select>
             </td>
-            <td>
+            <?php
+            // The dequeue engine reads these ids for the two single post/page
+            // conditions only. The field used to stay open on every row, so an
+            // admin could pick "Everywhere", type "12, 34", save, and see it come
+            // back looking active while visitors lost the handle on the whole
+            // site. Closed unless the chosen condition can honour it.
+            $usesIds = $this->settings->conditionUsesIds($rule['condition']);
+            ?>
+            <td class="plogins-assets-ids">
                 <input type="text" class="regular-text" name="<?php echo esc_attr($name); ?>[ids]"
                     value="<?php echo esc_attr(implode(', ', $rule['ids'])); ?>"
-                    placeholder="<?php esc_attr_e('optional, e.g. 12, 34', 'plogins-assets'); ?>">
+                    placeholder="<?php esc_attr_e('optional, e.g. 12, 34', 'plogins-assets'); ?>"
+                    <?php disabled(! $usesIds); ?>>
+                <span class="description plogins-assets-ids-note"<?php echo $usesIds ? ' hidden' : ''; ?>>
+                    <?php esc_html_e('Used only by the two single posts/pages conditions.', 'plogins-assets'); ?>
+                </span>
             </td>
             <td>
                 <button type="button" class="button-link plogins-assets-remove" aria-label="<?php esc_attr_e('Remove rule', 'plogins-assets'); ?>">&times;</button>

@@ -22,6 +22,31 @@
 		}
 	} );
 
+	// Only these two conditions look at the ids on the front end, so the field
+	// follows the select instead of sitting open and pretending to narrow a rule
+	// it can never narrow. Keep in sync with SettingsRepository::ID_CONDITIONS.
+	var idConditions = [ 'is_singular', 'not_singular' ];
+
+	rows.addEventListener( 'change', function ( e ) {
+		var select = e.target.closest( 'select[name$="[condition]"]' );
+		if ( ! select ) {
+			return;
+		}
+		var row = select.closest( '.plogins-assets-row' );
+		if ( ! row ) {
+			return;
+		}
+		var uses = idConditions.indexOf( select.value ) !== -1;
+		var input = row.querySelector( 'input[name$="[ids]"]' );
+		var note = row.querySelector( '.plogins-assets-ids-note' );
+		if ( input ) {
+			input.disabled = ! uses;
+		}
+		if ( note ) {
+			note.hidden = uses;
+		}
+	} );
+
 	rows.addEventListener( 'click', function ( e ) {
 		var btn = e.target.closest( '.plogins-assets-remove' );
 		if ( ! btn ) {

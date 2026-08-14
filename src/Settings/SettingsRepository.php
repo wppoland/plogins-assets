@@ -29,10 +29,24 @@ final class SettingsRepository
         'desktop',       // wp_is_mobile() is false
     ];
 
+    /**
+     * The only conditions AssetManager::matches() reads the ids list for. Every
+     * other condition decides on the request alone.
+     */
+    private const ID_CONDITIONS = ['is_singular', 'not_singular'];
+
     /** @return array<int, string> */
     public function conditions(): array
     {
         return self::CONDITIONS;
+    }
+
+    /**
+     * Whether a condition can actually act on the post/page IDs of a rule.
+     */
+    public function conditionUsesIds(string $condition): bool
+    {
+        return in_array($condition, self::ID_CONDITIONS, true);
     }
 
     public function isEnabled(): bool
@@ -113,11 +127,20 @@ final class SettingsRepository
                 $condition = 'everywhere';
             }
 
+            // Only the two singular conditions reach the ids downstream. Keeping
+            // them on the other five was a quiet lie: the merchant typed "12, 34"
+            // next to "Everywhere", saw it come back on reload as if it were in
+            // force, and every shopper on every page still lost the handle. Store
+            // nothing we cannot apply.
+            $ids = $this->conditionUsesIds($condition)
+                ? $this->normalizeIds($row['ids'] ?? '')
+                : [];
+
             $rules[] = [
                 'handle'    => $handle,
                 'type'      => $type,
                 'condition' => $condition,
-                'ids'       => $this->normalizeIds($row['ids'] ?? ''),
+                'ids'       => $ids,
             ];
         }
 
