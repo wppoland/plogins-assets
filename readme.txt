@@ -2,9 +2,9 @@
 Contributors: wppoland
 Tags: performance, assets, scripts, styles, optimization
 Requires at least: 6.5
-Tested up to: 6.8
+Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -66,6 +66,9 @@ No. Rules apply on the front end only.
 1. The rule table: remove a handle on the pages that do not need it.
 
 == Changelog ==
+
+= 1.0.4 =
+* Tested against WordPress 7.1. Verified by activating this build on a clean 7.1 install with WooCommerce 11.1, not by editing the header.
 
 = 1.0.3 =
 * The Post/Page IDs box is now available only for the two single posts/pages conditions, the ones that can act on it. With any other condition it is greyed out with a short note, so a rule set to Everywhere or to a device can no longer look as if it were limited to a few pages while the handle is in fact removed across the whole site.
