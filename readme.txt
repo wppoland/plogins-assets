@@ -35,7 +35,7 @@ Plogins Assets is one of a family of small, focused WordPress and WooCommerce pl
 
 1. Upload the plugin to `/wp-content/plugins/plogins-assets`, or install it from the Plugins screen.
 2. Activate it.
-3. Go to **Settings -> Plogins Assets**.
+3. Go to **Plogins Assets** in the main admin menu.
 4. Add a rule: type the handle, pick script or style, and choose where to remove it.
 5. Save, then check the front end.
 
