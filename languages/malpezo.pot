@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plogins Assets - Conditional Script & Style Loading 1.0.5\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-assets\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/malpezo\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -12,30 +12,30 @@ msgstr ""
 "POT-Creation-Date: 2026-09-09T14:37:55+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: plogins-assets\n"
+"X-Domain: malpezo\n"
 
 #. Plugin Name of the plugin
-#: plogins-assets.php
+#: malpezo.php
 msgid "Plogins Assets - Conditional Script & Style Loading"
 msgstr ""
 
 #. Plugin URI of the plugin
-#: plogins-assets.php
-msgid "https://plogins.com/plogins-assets/"
+#: malpezo.php
+msgid "https://plogins.com/malpezo/"
 msgstr ""
 
 #. Description of the plugin
-#: plogins-assets.php
+#: malpezo.php
 msgid "Dequeue individual scripts and styles on the pages that do not need them. Fewer requests, lighter pages, faster loads - using WordPress core, no page builder lock-in."
 msgstr ""
 
 #. Author of the plugin
-#: plogins-assets.php
+#: malpezo.php
 msgid "WPPoland.com"
 msgstr ""
 
 #. Author URI of the plugin
-#: plogins-assets.php
+#: malpezo.php
 msgid "https://wppoland.com"
 msgstr ""
 

@@ -10,12 +10,12 @@ use PloginsAssets\Settings\SettingsRepository;
 defined('ABSPATH') || exit;
 
 /**
- * Settings screen under Settings -> Plogins Assets. Renders the master switch
+ * Settings screen under Settings -> Malpezo. Renders the master switch
  * and the repeatable rule table, and handles the nonce-guarded save.
  */
 final class SettingsPage implements HasHooks
 {
-    private const SLUG   = 'plogins-assets';
+    private const SLUG   = 'malpezo';
     private const ACTION = 'plogins_assets_save';
 
     public function __construct(private readonly SettingsRepository $settings)
@@ -32,8 +32,8 @@ final class SettingsPage implements HasHooks
     public function addMenu(): void
     {
         add_menu_page(
-            __('Plogins Assets', 'plogins-assets'),
-            __('Plogins Assets', 'plogins-assets'),
+            __('Malpezo', 'malpezo'),
+            __('Malpezo', 'malpezo'),
             'manage_options',
             self::SLUG,
             [$this, 'render'],
@@ -66,7 +66,7 @@ final class SettingsPage implements HasHooks
     public function save(): void
     {
         if (! current_user_can('manage_options')) {
-            wp_die(esc_html__('You are not allowed to do this.', 'plogins-assets'));
+            wp_die(esc_html__('You are not allowed to do this.', 'malpezo'));
         }
 
         check_admin_referer(self::ACTION);
@@ -103,17 +103,17 @@ final class SettingsPage implements HasHooks
 
         ?>
         <div class="wrap plogins-assets">
-            <h1><?php esc_html_e('Plogins Assets', 'plogins-assets'); ?></h1>
+            <h1><?php esc_html_e('Malpezo', 'malpezo'); ?></h1>
             <p class="description">
-                <?php esc_html_e('Remove specific scripts and styles from the pages that do not need them. Lighter pages load faster.', 'plogins-assets'); ?>
+                <?php esc_html_e('Remove specific scripts and styles from the pages that do not need them. Lighter pages load faster.', 'malpezo'); ?>
             </p>
 
             <?php if (isset($_GET['updated'])) : // phpcs:ignore WordPress.Security.NonceVerification.Recommended ?>
-                <div class="notice notice-success is-dismissible"><p><?php esc_html_e('Settings saved.', 'plogins-assets'); ?></p></div>
+                <div class="notice notice-success is-dismissible"><p><?php esc_html_e('Settings saved.', 'malpezo'); ?></p></div>
             <?php endif; ?>
 
             <div class="notice notice-warning inline">
-                <p><?php esc_html_e('Removing a handle that another script depends on can break page functionality. Change one rule at a time and check the front end.', 'plogins-assets'); ?></p>
+                <p><?php esc_html_e('Removing a handle that another script depends on can break page functionality. Change one rule at a time and check the front end.', 'malpezo'); ?></p>
             </div>
 
             <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
@@ -123,17 +123,17 @@ final class SettingsPage implements HasHooks
                 <p>
                     <label>
                         <input type="checkbox" name="enabled" value="1" <?php checked($enabled); ?>>
-                        <strong><?php esc_html_e('Enable conditional asset loading', 'plogins-assets'); ?></strong>
+                        <strong><?php esc_html_e('Enable conditional asset loading', 'malpezo'); ?></strong>
                     </label>
                 </p>
 
                 <table class="widefat plogins-assets-rules">
                     <thead>
                         <tr>
-                            <th><?php esc_html_e('Handle', 'plogins-assets'); ?></th>
-                            <th><?php esc_html_e('Type', 'plogins-assets'); ?></th>
-                            <th><?php esc_html_e('Remove when', 'plogins-assets'); ?></th>
-                            <th><?php esc_html_e('Post/Page IDs', 'plogins-assets'); ?></th>
+                            <th><?php esc_html_e('Handle', 'malpezo'); ?></th>
+                            <th><?php esc_html_e('Type', 'malpezo'); ?></th>
+                            <th><?php esc_html_e('Remove when', 'malpezo'); ?></th>
+                            <th><?php esc_html_e('Post/Page IDs', 'malpezo'); ?></th>
                             <th></th>
                         </tr>
                     </thead>
@@ -146,13 +146,13 @@ final class SettingsPage implements HasHooks
 
                 <p>
                     <button type="button" class="button" id="plogins-assets-add">
-                        <?php esc_html_e('+ Add rule', 'plogins-assets'); ?>
+                        <?php esc_html_e('+ Add rule', 'malpezo'); ?>
                     </button>
                 </p>
 
                 <?php $this->renderHandleHints(); ?>
 
-                <?php submit_button(__('Save rules', 'plogins-assets')); ?>
+                <?php submit_button(__('Save rules', 'malpezo')); ?>
             </form>
 
             <template id="plogins-assets-template">
@@ -174,12 +174,12 @@ final class SettingsPage implements HasHooks
                 <input type="text" class="regular-text" list="plogins-assets-handles"
                     name="<?php echo esc_attr($name); ?>[handle]"
                     value="<?php echo esc_attr($rule['handle']); ?>"
-                    placeholder="<?php esc_attr_e('e.g. contact-form-7', 'plogins-assets'); ?>">
+                    placeholder="<?php esc_attr_e('e.g. contact-form-7', 'malpezo'); ?>">
             </td>
             <td>
                 <select name="<?php echo esc_attr($name); ?>[type]">
-                    <option value="script" <?php selected($rule['type'], 'script'); ?>><?php esc_html_e('Script (JS)', 'plogins-assets'); ?></option>
-                    <option value="style" <?php selected($rule['type'], 'style'); ?>><?php esc_html_e('Style (CSS)', 'plogins-assets'); ?></option>
+                    <option value="script" <?php selected($rule['type'], 'script'); ?>><?php esc_html_e('Script (JS)', 'malpezo'); ?></option>
+                    <option value="style" <?php selected($rule['type'], 'style'); ?>><?php esc_html_e('Style (CSS)', 'malpezo'); ?></option>
                 </select>
             </td>
             <td>
@@ -202,14 +202,14 @@ final class SettingsPage implements HasHooks
             <td class="plogins-assets-ids">
                 <input type="text" class="regular-text" name="<?php echo esc_attr($name); ?>[ids]"
                     value="<?php echo esc_attr(implode(', ', $rule['ids'])); ?>"
-                    placeholder="<?php esc_attr_e('optional, e.g. 12, 34', 'plogins-assets'); ?>"
+                    placeholder="<?php esc_attr_e('optional, e.g. 12, 34', 'malpezo'); ?>"
                     <?php disabled(! $usesIds); ?>>
                 <span class="description plogins-assets-ids-note"<?php echo $usesIds ? ' hidden' : ''; ?>>
-                    <?php esc_html_e('Used only by the two single posts/pages conditions.', 'plogins-assets'); ?>
+                    <?php esc_html_e('Used only by the two single posts/pages conditions.', 'malpezo'); ?>
                 </span>
             </td>
             <td>
-                <button type="button" class="button-link plogins-assets-remove" aria-label="<?php esc_attr_e('Remove rule', 'plogins-assets'); ?>">&times;</button>
+                <button type="button" class="button-link plogins-assets-remove" aria-label="<?php esc_attr_e('Remove rule', 'malpezo'); ?>">&times;</button>
             </td>
         </tr>
         <?php
@@ -218,13 +218,13 @@ final class SettingsPage implements HasHooks
     private function conditionLabel(string $cond): string
     {
         $labels = [
-            'everywhere'   => __('Everywhere', 'plogins-assets'),
-            'front_page'   => __('On the front page', 'plogins-assets'),
-            'blog_home'    => __('On the blog posts index', 'plogins-assets'),
-            'is_singular'  => __('On single posts/pages (matching IDs)', 'plogins-assets'),
-            'not_singular' => __('Except single posts/pages (matching IDs)', 'plogins-assets'),
-            'mobile'       => __('On mobile devices', 'plogins-assets'),
-            'desktop'      => __('On desktop devices', 'plogins-assets'),
+            'everywhere'   => __('Everywhere', 'malpezo'),
+            'front_page'   => __('On the front page', 'malpezo'),
+            'blog_home'    => __('On the blog posts index', 'malpezo'),
+            'is_singular'  => __('On single posts/pages (matching IDs)', 'malpezo'),
+            'not_singular' => __('Except single posts/pages (matching IDs)', 'malpezo'),
+            'mobile'       => __('On mobile devices', 'malpezo'),
+            'desktop'      => __('On desktop devices', 'malpezo'),
         ];
 
         return $labels[$cond] ?? $cond;

@@ -51,7 +51,7 @@ final class Plugin
         }
 
         /**
-         * Fires after Plogins Assets has fully booted. Add-ons (Plogins Assets
+         * Fires after Malpezo has fully booted. Add-ons (Malpezo
          * Pro) hook this to reuse the FREE container and register their own
          * services.
          *
