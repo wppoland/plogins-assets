@@ -125,7 +125,7 @@ msgstr "opcjonalne, np. 12, 34"
 
 #: src/Admin/SettingsPage.php:208
 msgid "Used only by the two single posts/pages conditions."
-msgstr ""
+msgstr "Używane tylko przez dwa warunki dotyczące pojedynczych wpisów/stron."
 
 #: src/Admin/SettingsPage.php:212
 msgid "Remove rule"
