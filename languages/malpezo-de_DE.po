@@ -2,9 +2,10 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plogins Assets - Conditional Script & Style Loading 1.0.0\n"
+"Project-Id-Version: Plogins Assets - Conditional Script & Style Loading "
+"1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/malpezo\n"
-"POT-Creation-Date: 2026-07-16T08:26:31+00:00\n"
+"POT-Creation-Date: 2026-09-09T14:37:55+00:00\n"
 "PO-Revision-Date: 2026-07-16T08:26:31+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: German <de@li.org>\n"
@@ -48,15 +49,15 @@ msgid "https://wppoland.com"
 msgstr "https://wppoland.com"
 
 #: src/Admin/SettingsPage.php:35 src/Admin/SettingsPage.php:36
-#: src/Admin/SettingsPage.php:104
+#: src/Admin/SettingsPage.php:106
 msgid "Plogins Assets"
 msgstr "Plugins-Assets"
 
-#: src/Admin/SettingsPage.php:67
+#: src/Admin/SettingsPage.php:69
 msgid "You are not allowed to do this."
 msgstr "Dies ist dir nicht gestattet."
 
-#: src/Admin/SettingsPage.php:106
+#: src/Admin/SettingsPage.php:108
 msgid ""
 "Remove specific scripts and styles from the pages that do not need them. "
 "Lighter pages load faster."
@@ -64,11 +65,11 @@ msgstr ""
 "Entferne bestimmte Skripte und Stile von den Seiten, die sie nicht "
 "benötigen. Leichtere Seiten werden schneller geladen."
 
-#: src/Admin/SettingsPage.php:110
+#: src/Admin/SettingsPage.php:112
 msgid "Settings saved."
 msgstr "Einstellungen gespeichert."
 
-#: src/Admin/SettingsPage.php:114
+#: src/Admin/SettingsPage.php:116
 msgid ""
 "Removing a handle that another script depends on can break page "
 "functionality. Change one rule at a time and check the front end."
@@ -77,78 +78,82 @@ msgstr ""
 "Seitenfunktionalität beeinträchtigen. Ändere jeweils eine Regel und "
 "überprüfe das Frontend."
 
-#: src/Admin/SettingsPage.php:124
+#: src/Admin/SettingsPage.php:126
 msgid "Enable conditional asset loading"
 msgstr "Aktiviere das bedingte Laden von Assets"
 
-#: src/Admin/SettingsPage.php:131
+#: src/Admin/SettingsPage.php:133
 msgid "Handle"
 msgstr "Griff"
 
-#: src/Admin/SettingsPage.php:132
+#: src/Admin/SettingsPage.php:134
 msgid "Type"
 msgstr "Typ"
 
-#: src/Admin/SettingsPage.php:133
+#: src/Admin/SettingsPage.php:135
 msgid "Remove when"
 msgstr "Entfernen, wenn"
 
-#: src/Admin/SettingsPage.php:134
+#: src/Admin/SettingsPage.php:136
 msgid "Post/Page IDs"
 msgstr "Beitrags-/Seiten-IDs"
 
-#: src/Admin/SettingsPage.php:147
+#: src/Admin/SettingsPage.php:149
 msgid "+ Add rule"
 msgstr "+ Regel hinzufügen"
 
-#: src/Admin/SettingsPage.php:153
+#: src/Admin/SettingsPage.php:155
 msgid "Save rules"
 msgstr "Regeln speichern"
 
-#: src/Admin/SettingsPage.php:175
+#: src/Admin/SettingsPage.php:177
 msgid "e.g. contact-form-7"
 msgstr "z.B. Kontaktformular-7"
 
-#: src/Admin/SettingsPage.php:179
+#: src/Admin/SettingsPage.php:181
 msgid "Script (JS)"
 msgstr "Skript (JS)"
 
-#: src/Admin/SettingsPage.php:180
+#: src/Admin/SettingsPage.php:182
 msgid "Style (CSS)"
 msgstr "Stil (CSS)"
 
-#: src/Admin/SettingsPage.php:195
+#: src/Admin/SettingsPage.php:205
 msgid "optional, e.g. 12, 34"
 msgstr "optional, z.B. 12, 34"
 
-#: src/Admin/SettingsPage.php:198
+#: src/Admin/SettingsPage.php:208
+msgid "Used only by the two single posts/pages conditions."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:212
 msgid "Remove rule"
 msgstr "Regel entfernen"
 
-#: src/Admin/SettingsPage.php:207
+#: src/Admin/SettingsPage.php:221
 msgid "Everywhere"
 msgstr "Überall"
 
-#: src/Admin/SettingsPage.php:208
+#: src/Admin/SettingsPage.php:222
 msgid "On the front page"
 msgstr "Auf der Titelseite"
 
-#: src/Admin/SettingsPage.php:209
+#: src/Admin/SettingsPage.php:223
 msgid "On the blog posts index"
 msgstr "Im Index der Blogbeiträge"
 
-#: src/Admin/SettingsPage.php:210
+#: src/Admin/SettingsPage.php:224
 msgid "On single posts/pages (matching IDs)"
 msgstr "Auf einzelnen Beiträgen/Seiten (passende IDs)"
 
-#: src/Admin/SettingsPage.php:211
+#: src/Admin/SettingsPage.php:225
 msgid "Except single posts/pages (matching IDs)"
 msgstr "Außer einzelne Beiträge/Seiten (passende IDs)"
 
-#: src/Admin/SettingsPage.php:212
+#: src/Admin/SettingsPage.php:226
 msgid "On mobile devices"
 msgstr "Auf mobilen Geräten"
 
-#: src/Admin/SettingsPage.php:213
+#: src/Admin/SettingsPage.php:227
 msgid "On desktop devices"
 msgstr "Auf Desktop-Geräten"
