@@ -26,6 +26,8 @@ find "${STAGE}" -name '.DS_Store' -delete
 VERSION="$(grep -m1 "Version:" "${ROOT_DIR}/${NAME}.php" | tr -dc '0-9.')"
 ZIP="/tmp/${NAME}.zip"
 rm -f "${ZIP}"
+# zip -r adds to an existing archive, so a stale one keeps files the build no longer ships.
+rm -f "${ZIP}"
 ( cd "${OUT_DIR}" && zip -rqX "${ZIP}" "${NAME}" -x '*.DS_Store' )
 cp "${ZIP}" "${HOME}/Downloads/${NAME}-${VERSION}.zip"
 echo "Built ${ZIP} and ~/Downloads/${NAME}-${VERSION}.zip"
