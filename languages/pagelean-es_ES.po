@@ -4,123 +4,124 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plogins Assets - Conditional Script & Style Loading "
 "1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/malpezo\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pagelean\n"
 "POT-Creation-Date: 2026-09-09T14:37:55+00:00\n"
 "PO-Revision-Date: 2026-07-16T08:26:31+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
-"Language-Team: German <de@li.org>\n"
-"Language: de_DE\n"
+"Language-Team: Spanish <es@li.org>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Domain: malpezo\n"
+"X-Domain: pagelean\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
-#: malpezo.php
+#: pagelean.php
 msgid "Plogins Assets - Conditional Script & Style Loading"
-msgstr "Plogins-Assets, Bedingtes Laden von Skripten und Stilen"
+msgstr ""
+"Activos de Plogins: carga de estilos y secuencias de comandos condicionales"
 
 #. Plugin URI of the plugin
-#: malpezo.php
-msgid "https://plogins.com/malpezo/"
-msgstr "https://plogins.com/de/malpezo/"
+#: pagelean.php
+msgid "https://plogins.com/pagelean/"
+msgstr "https://plogins.com/es/pagelean/"
 
 #. Description of the plugin
-#: malpezo.php
+#: pagelean.php
 msgid ""
 "Dequeue individual scripts and styles on the pages that do not need them. "
 "Fewer requests, lighter pages, faster loads - using WordPress core, no page "
 "builder lock-in."
 msgstr ""
-"Entferne einzelne Skripte und Stile aus der Warteschlange auf den Seiten, "
-"die sie nicht benötigen. Weniger Anfragen, schlankere Seiten, schnellere "
-"Ladevorgänge, mit WordPress-Kern, keine Bindung an den Seitenersteller."
+"Retire de la cola scripts y estilos individuales en las páginas que no los "
+"necesitan. Menos solicitudes, páginas más ligeras, cargas más rápidas: "
+"utilizando el núcleo de WordPress, sin bloqueo del creador de páginas."
 
 #. Author of the plugin
-#: malpezo.php
+#: pagelean.php
 msgid "WPPoland.com"
 msgstr "WPPoland.com"
 
 #. Author URI of the plugin
-#: malpezo.php
+#: pagelean.php
 msgid "https://wppoland.com"
 msgstr "https://wppoland.com"
 
 #: src/Admin/SettingsPage.php:35 src/Admin/SettingsPage.php:36
 #: src/Admin/SettingsPage.php:106
 msgid "Plogins Assets"
-msgstr "Plugins-Assets"
+msgstr "Activos de inicio de sesión"
 
 #: src/Admin/SettingsPage.php:69
 msgid "You are not allowed to do this."
-msgstr "Dies ist dir nicht gestattet."
+msgstr "No tienes permitido hacer esto."
 
 #: src/Admin/SettingsPage.php:108
 msgid ""
 "Remove specific scripts and styles from the pages that do not need them. "
 "Lighter pages load faster."
 msgstr ""
-"Entferne bestimmte Skripte und Stile von den Seiten, die sie nicht "
-"benötigen. Leichtere Seiten werden schneller geladen."
+"Elimine scripts y estilos específicos de las páginas que no los necesitan. "
+"Las páginas más claras se cargan más rápido."
 
 #: src/Admin/SettingsPage.php:112
 msgid "Settings saved."
-msgstr "Einstellungen gespeichert."
+msgstr "Configuración guardada."
 
 #: src/Admin/SettingsPage.php:116
 msgid ""
 "Removing a handle that another script depends on can break page "
 "functionality. Change one rule at a time and check the front end."
 msgstr ""
-"Das Entfernen eines Handles, von dem ein anderes Skript abhängt, kann die "
-"Seitenfunktionalität beeinträchtigen. Ändere jeweils eine Regel und "
-"überprüfe das Frontend."
+"Eliminar un identificador del que depende otro script puede interrumpir la "
+"funcionalidad de la página. Cambie una regla a la vez y verifique la "
+"interfaz."
 
 #: src/Admin/SettingsPage.php:126
 msgid "Enable conditional asset loading"
-msgstr "Aktiviere das bedingte Laden von Assets"
+msgstr "Habilitar la carga de activos condicional"
 
 #: src/Admin/SettingsPage.php:133
 msgid "Handle"
-msgstr "Griff"
+msgstr "Manejar"
 
 #: src/Admin/SettingsPage.php:134
 msgid "Type"
-msgstr "Typ"
+msgstr "Tipo"
 
 #: src/Admin/SettingsPage.php:135
 msgid "Remove when"
-msgstr "Entfernen, wenn"
+msgstr "Eliminar cuando"
 
 #: src/Admin/SettingsPage.php:136
 msgid "Post/Page IDs"
-msgstr "Beitrags-/Seiten-IDs"
+msgstr "ID de publicación/página"
 
 #: src/Admin/SettingsPage.php:149
 msgid "+ Add rule"
-msgstr "+ Regel hinzufügen"
+msgstr "+ Añadir regla"
 
 #: src/Admin/SettingsPage.php:155
 msgid "Save rules"
-msgstr "Regeln speichern"
+msgstr "Guardar reglas"
 
 #: src/Admin/SettingsPage.php:177
 msgid "e.g. contact-form-7"
-msgstr "z.B. Kontaktformular-7"
+msgstr "p.ej. formulario-de-contacto-7"
 
 #: src/Admin/SettingsPage.php:181
 msgid "Script (JS)"
-msgstr "Skript (JS)"
+msgstr "Guión (JS)"
 
 #: src/Admin/SettingsPage.php:182
 msgid "Style (CSS)"
-msgstr "Stil (CSS)"
+msgstr "Estilo (CSS)"
 
 #: src/Admin/SettingsPage.php:205
 msgid "optional, e.g. 12, 34"
-msgstr "optional, z.B. 12, 34"
+msgstr "opcional, p.e. 12, 34"
 
 #: src/Admin/SettingsPage.php:208
 msgid "Used only by the two single posts/pages conditions."
@@ -128,32 +129,32 @@ msgstr ""
 
 #: src/Admin/SettingsPage.php:212
 msgid "Remove rule"
-msgstr "Regel entfernen"
+msgstr "Eliminar regla"
 
 #: src/Admin/SettingsPage.php:221
 msgid "Everywhere"
-msgstr "Überall"
+msgstr "En todas partes"
 
 #: src/Admin/SettingsPage.php:222
 msgid "On the front page"
-msgstr "Auf der Titelseite"
+msgstr "En la portada"
 
 #: src/Admin/SettingsPage.php:223
 msgid "On the blog posts index"
-msgstr "Im Index der Blogbeiträge"
+msgstr "En el índice de publicaciones del blog"
 
 #: src/Admin/SettingsPage.php:224
 msgid "On single posts/pages (matching IDs)"
-msgstr "Auf einzelnen Beiträgen/Seiten (passende IDs)"
+msgstr "En publicaciones/páginas individuales (ID coincidentes)"
 
 #: src/Admin/SettingsPage.php:225
 msgid "Except single posts/pages (matching IDs)"
-msgstr "Außer einzelne Beiträge/Seiten (passende IDs)"
+msgstr "Excepto publicaciones/páginas individuales (ID coincidentes)"
 
 #: src/Admin/SettingsPage.php:226
 msgid "On mobile devices"
-msgstr "Auf mobilen Geräten"
+msgstr "En dispositivos móviles"
 
 #: src/Admin/SettingsPage.php:227
 msgid "On desktop devices"
-msgstr "Auf Desktop-Geräten"
+msgstr "En dispositivos de escritorio"

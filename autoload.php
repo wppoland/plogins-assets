@@ -13,9 +13,8 @@ namespace PloginsAssets;
 
 defined('ABSPATH') || exit;
 
-$composer = __DIR__ . '/vendor/autoload.php';
-if (is_readable($composer)) {
-    require_once $composer;
+if (is_readable(__DIR__ . '/vendor/autoload.php')) {
+    require_once __DIR__ . '/vendor/autoload.php';
     return;
 }
 

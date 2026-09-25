@@ -1,10 +1,10 @@
-=== Malpezo - Conditional Script and Style Loading ===
+=== Pagelean - Conditional Script and Style Loading ===
 Contributors: wppoland
 Tags: performance, assets, scripts, styles, optimization
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ Dequeue individual scripts and styles on the pages that do not need them. Fewer 
 
 Most plugins load their CSS and JavaScript on every page, even where their feature never appears. A contact form script on your checkout, a slider stylesheet on your blog posts, a social-share bundle on your privacy policy. That weight slows every visit.
 
-Malpezo lets you remove a specific script or style from exactly the pages where it is not needed - front page, blog index, single posts and pages (by ID), or by device. It uses the standard WordPress enqueue system (`wp_dequeue_script` / `wp_dequeue_style`), so there is no page-builder lock-in and nothing proprietary to learn.
+Pagelean lets you remove a specific script or style from exactly the pages where it is not needed - front page, blog index, single posts and pages (by ID), or by device. It uses the standard WordPress enqueue system (`wp_dequeue_script` / `wp_dequeue_style`), so there is no page-builder lock-in and nothing proprietary to learn.
 
 = What it does =
 
@@ -29,13 +29,13 @@ It does not minify, combine or defer. It removes what you tell it to remove - no
 
 = Part of the Plogins family =
 
-Malpezo is one of a family of small, focused WordPress and WooCommerce plugins by WPPoland. Learn more at [plogins.com](https://plogins.com/).
+Pagelean is one of a family of small, focused WordPress and WooCommerce plugins by WPPoland. Learn more at [plogins.com](https://plogins.com/).
 
 == Installation ==
 
-1. Upload the plugin to `/wp-content/plugins/malpezo`, or install it from the Plugins screen.
+1. Upload the plugin to `/wp-content/plugins/pagelean`, or install it from the Plugins screen.
 2. Activate it.
-3. Go to **Malpezo** in the main admin menu.
+3. Go to **Pagelean** in the main admin menu.
 4. Add a rule: type the handle, pick script or style, and choose where to remove it.
 5. Save, then check the front end.
 
@@ -66,6 +66,10 @@ No. Rules apply on the front end only.
 1. The rule table: remove a handle on the pages that do not need it.
 
 == Changelog ==
+
+= 1.1.1 =
+* Renamed to Pagelean, a plain English name in place of the Esperanto one. The text domain and the plugin folder follow the name; the stored settings, options and every hook are unchanged.
+* The autoloader no longer leaves a global variable behind.
 
 = 1.1.0 =
 * Renamed to Malpezo. The WordPress.org review team asks a plugin name to lead with a distinctive, coined identifier rather than a generic descriptive word. Malpezo is Esperanto for lightness. The text domain follows the name; the stored rules, the settings and every hook are unchanged.

@@ -2,7 +2,7 @@
 <ruleset name="Plogins Assets">
     <description>WordPress Coding Standards - output escaping, nonces, redirects, input sanitisation. WordPress.org Plugin Check is the full compliance gate.</description>
 
-    <file>malpezo.php</file>
+    <file>pagelean.php</file>
     <file>autoload.php</file>
     <file>src</file>
     <file>config</file>

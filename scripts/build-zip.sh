@@ -6,7 +6,7 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 # The zip's top folder has to match the Text Domain, which is the wp.org slug.
 # The checkout directory does not: this one is named `plogins-assets` while the
-# plugin is `malpezo`, and a package built from the folder name is a
+# plugin is `pagelean`, and a package built from the folder name is a
 # TextDomainMismatch the reviewer rejects.
 NAME="$(grep -m1 -h "Text Domain:" "$ROOT_DIR"/*.php 2>/dev/null | sed 's/.*Text Domain:[[:space:]]*//; s/[[:space:]]*$//')"
 NAME="${NAME:-$(basename "$ROOT_DIR")}"

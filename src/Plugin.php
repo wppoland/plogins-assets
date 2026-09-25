@@ -51,7 +51,7 @@ final class Plugin
         }
 
         /**
-         * Fires after Malpezo has fully booted. Add-ons (Malpezo
+         * Fires after Pagelean has fully booted. Add-ons (Pagelean
          * Pro) hook this to reuse the FREE container and register their own
          * services.
          *
