@@ -4,7 +4,7 @@ Tags: performance, assets, scripts, styles, optimization
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -66,6 +66,9 @@ No. Rules apply on the front end only.
 1. The rule table: remove a handle on the pages that do not need it.
 
 == Changelog ==
+
+= 1.1.2 =
+* The settings form sanitises every rule field as it is read, and the saved notice only shows for the exact value the plugin sets.
 
 = 1.1.1 =
 * Renamed to Pagelean, a plain English name in place of the Esperanto one. The text domain and the plugin folder follow the name; the stored settings, options and every hook are unchanged.

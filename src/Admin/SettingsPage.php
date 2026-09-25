@@ -73,10 +73,10 @@ final class SettingsPage implements HasHooks
 
         $enabled = ! empty($_POST['enabled']);
 
-        // Rules are re-normalised in the repository; here we only unslash. Each
-        // field is sanitised inside SettingsRepository::normalizeRules().
+        // Every field is single-line text, sanitised here on read; the
+        // repository's normalizeRules() then validates each one.
         $rawRules = isset($_POST['rules']) && is_array($_POST['rules'])
-            ? wp_unslash($_POST['rules']) // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- sanitised in normalizeRules()
+            ? map_deep(wp_unslash($_POST['rules']), 'sanitize_text_field')
             : [];
 
         $this->settings->save($enabled, $rawRules);
@@ -108,7 +108,8 @@ final class SettingsPage implements HasHooks
                 <?php esc_html_e('Remove specific scripts and styles from the pages that do not need them. Lighter pages load faster.', 'pagelean'); ?>
             </p>
 
-            <?php if (isset($_GET['updated'])) : // phpcs:ignore WordPress.Security.NonceVerification.Recommended ?>
+            <?php // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- read-only view parameter, only the literal '1' shows the notice.
+            if (isset($_GET['updated']) && '1' === sanitize_key(wp_unslash($_GET['updated']))) : ?>
                 <div class="notice notice-success is-dismissible"><p><?php esc_html_e('Settings saved.', 'pagelean'); ?></p></div>
             <?php endif; ?>
 
