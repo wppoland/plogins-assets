@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plogins Assets - Conditional Script & Style Loading "
 "1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pagelean\n"
-"POT-Creation-Date: 2026-09-09T14:37:55+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-assets\n"
+"POT-Creation-Date: 2026-09-26T04:48:57+00:00\n"
 "PO-Revision-Date: 2026-07-16T08:26:31+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -19,14 +19,13 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: pagelean.php
-msgid "Plogins Assets - Conditional Script & Style Loading"
-msgstr ""
-"Activos de Plogins: carga de estilos y secuencias de comandos condicionales"
+msgid "Pagelean - Conditional Script and Style Loading"
+msgstr "Pagelean - carga de estilos y secuencias de comandos condicionales"
 
 #. Plugin URI of the plugin
 #: pagelean.php
-msgid "https://plogins.com/pagelean/"
-msgstr "https://plogins.com/es/pagelean/"
+msgid "https://plogins.com/plogins-assets/"
+msgstr ""
 
 #. Description of the plugin
 #: pagelean.php
@@ -51,8 +50,8 @@ msgstr "https://wppoland.com"
 
 #: src/Admin/SettingsPage.php:35 src/Admin/SettingsPage.php:36
 #: src/Admin/SettingsPage.php:106
-msgid "Plogins Assets"
-msgstr "Activos de inicio de sesión"
+msgid "Pagelean"
+msgstr ""
 
 #: src/Admin/SettingsPage.php:69
 msgid "You are not allowed to do this."
@@ -66,11 +65,11 @@ msgstr ""
 "Elimine scripts y estilos específicos de las páginas que no los necesitan. "
 "Las páginas más claras se cargan más rápido."
 
-#: src/Admin/SettingsPage.php:112
+#: src/Admin/SettingsPage.php:113
 msgid "Settings saved."
 msgstr "Configuración guardada."
 
-#: src/Admin/SettingsPage.php:116
+#: src/Admin/SettingsPage.php:117
 msgid ""
 "Removing a handle that another script depends on can break page "
 "functionality. Change one rule at a time and check the front end."
@@ -79,82 +78,85 @@ msgstr ""
 "funcionalidad de la página. Cambie una regla a la vez y verifique la "
 "interfaz."
 
-#: src/Admin/SettingsPage.php:126
+#: src/Admin/SettingsPage.php:127
 msgid "Enable conditional asset loading"
 msgstr "Habilitar la carga de activos condicional"
 
-#: src/Admin/SettingsPage.php:133
+#: src/Admin/SettingsPage.php:134
 msgid "Handle"
 msgstr "Manejar"
 
-#: src/Admin/SettingsPage.php:134
+#: src/Admin/SettingsPage.php:135
 msgid "Type"
 msgstr "Tipo"
 
-#: src/Admin/SettingsPage.php:135
+#: src/Admin/SettingsPage.php:136
 msgid "Remove when"
 msgstr "Eliminar cuando"
 
-#: src/Admin/SettingsPage.php:136
+#: src/Admin/SettingsPage.php:137
 msgid "Post/Page IDs"
 msgstr "ID de publicación/página"
 
-#: src/Admin/SettingsPage.php:149
+#: src/Admin/SettingsPage.php:150
 msgid "+ Add rule"
 msgstr "+ Añadir regla"
 
-#: src/Admin/SettingsPage.php:155
+#: src/Admin/SettingsPage.php:156
 msgid "Save rules"
 msgstr "Guardar reglas"
 
-#: src/Admin/SettingsPage.php:177
+#: src/Admin/SettingsPage.php:178
 msgid "e.g. contact-form-7"
 msgstr "p.ej. formulario-de-contacto-7"
 
-#: src/Admin/SettingsPage.php:181
+#: src/Admin/SettingsPage.php:182
 msgid "Script (JS)"
 msgstr "Guión (JS)"
 
-#: src/Admin/SettingsPage.php:182
+#: src/Admin/SettingsPage.php:183
 msgid "Style (CSS)"
 msgstr "Estilo (CSS)"
 
-#: src/Admin/SettingsPage.php:205
+#: src/Admin/SettingsPage.php:206
 msgid "optional, e.g. 12, 34"
 msgstr "opcional, p.e. 12, 34"
 
-#: src/Admin/SettingsPage.php:208
+#: src/Admin/SettingsPage.php:209
 msgid "Used only by the two single posts/pages conditions."
 msgstr ""
 
-#: src/Admin/SettingsPage.php:212
+#: src/Admin/SettingsPage.php:213
 msgid "Remove rule"
 msgstr "Eliminar regla"
 
-#: src/Admin/SettingsPage.php:221
+#: src/Admin/SettingsPage.php:222
 msgid "Everywhere"
 msgstr "En todas partes"
 
-#: src/Admin/SettingsPage.php:222
+#: src/Admin/SettingsPage.php:223
 msgid "On the front page"
 msgstr "En la portada"
 
-#: src/Admin/SettingsPage.php:223
+#: src/Admin/SettingsPage.php:224
 msgid "On the blog posts index"
 msgstr "En el índice de publicaciones del blog"
 
-#: src/Admin/SettingsPage.php:224
+#: src/Admin/SettingsPage.php:225
 msgid "On single posts/pages (matching IDs)"
 msgstr "En publicaciones/páginas individuales (ID coincidentes)"
 
-#: src/Admin/SettingsPage.php:225
+#: src/Admin/SettingsPage.php:226
 msgid "Except single posts/pages (matching IDs)"
 msgstr "Excepto publicaciones/páginas individuales (ID coincidentes)"
 
-#: src/Admin/SettingsPage.php:226
+#: src/Admin/SettingsPage.php:227
 msgid "On mobile devices"
 msgstr "En dispositivos móviles"
 
-#: src/Admin/SettingsPage.php:227
+#: src/Admin/SettingsPage.php:228
 msgid "On desktop devices"
 msgstr "En dispositivos de escritorio"
+
+#~ msgid "Plogins Assets"
+#~ msgstr "Activos de inicio de sesión"
