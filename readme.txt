@@ -1,5 +1,5 @@
 === Pagelean - Conditional Script and Style Loading ===
-Contributors: wppoland
+Contributors: motylanogha
 Tags: performance, assets, scripts, styles, optimization
 Requires at least: 6.5
 Tested up to: 7.1
