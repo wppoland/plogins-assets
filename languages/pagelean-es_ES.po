@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plogins Assets - Conditional Script & Style Loading "
 "1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-assets\n"
-"POT-Creation-Date: 2026-09-26T04:48:57+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pagelean\n"
+"POT-Creation-Date: 2026-10-06T03:55:12+00:00\n"
 "PO-Revision-Date: 2026-07-16T08:26:31+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -25,7 +25,7 @@ msgstr "Pagelean - carga de estilos y secuencias de comandos condicionales"
 #. Plugin URI of the plugin
 #: pagelean.php
 msgid "https://plogins.com/plogins-assets/"
-msgstr ""
+msgstr "https://plogins.com/plogins-assets/"
 
 #. Description of the plugin
 #: pagelean.php
@@ -51,7 +51,7 @@ msgstr "https://wppoland.com"
 #: src/Admin/SettingsPage.php:35 src/Admin/SettingsPage.php:36
 #: src/Admin/SettingsPage.php:106
 msgid "Pagelean"
-msgstr ""
+msgstr "Pagelean"
 
 #: src/Admin/SettingsPage.php:69
 msgid "You are not allowed to do this."
@@ -124,7 +124,7 @@ msgstr "opcional, p.e. 12, 34"
 
 #: src/Admin/SettingsPage.php:209
 msgid "Used only by the two single posts/pages conditions."
-msgstr ""
+msgstr "Solo lo usan las dos condiciones de publicaciones/páginas individuales."
 
 #: src/Admin/SettingsPage.php:213
 msgid "Remove rule"

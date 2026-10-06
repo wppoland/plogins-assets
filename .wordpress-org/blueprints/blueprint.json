@@ -1,0 +1,14 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "meta": {
+    "title": "Pagelean - Conditional Script and Style Loading, Live Preview",
+    "author": "WPPoland"
+  },
+  "landingPage": "/wp-admin/admin.php?page=pagelean",
+  "preferredVersions": {
+    "php": "8.2",
+    "wp": "latest"
+  },
+  "login": true,
+  "steps": []
+}
